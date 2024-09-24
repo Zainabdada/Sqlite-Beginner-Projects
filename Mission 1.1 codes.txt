@@ -1,0 +1,18 @@
+SELECT * FROM new_students;
+INSERT INTO  new_students(first_name,last_name,email,amount,age,course,complete)
+VALUES 	('alan', 'samuels', 'alan@gmail.com',100,28,'Product Management', 'No'),
+		    ('julia', 'briar', 'julia@hotmail.com',50,47,'Data Analyst', 'No'),
+        ('henry', 'charles', 'herny@gmail.com',100,32,'Growth Marketing', 'No');
+Update new_students
+set course = 'Growth Marketing' where email = 'kanye@gmail.com';
+Delete from new_students where email = 'steve@gmail.com';
+
+ALTER TABLE new_students
+ADD COLUMN country text;
+
+ALTER TABLE new_students
+ADD COLUMN job_status text;
+
+
+SELECT * 
+FROM new_students;
